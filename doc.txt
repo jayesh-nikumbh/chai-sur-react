@@ -1,0 +1,36 @@
+for creating react app - npx create-react-app 01basicreact
+second method -
+    1. npm create vite@latest
+    2. project name - 01vitereact
+    3. react
+    4. javascript
+    proroject tayyar node_modules not available
+    usake liye us folder me jake npm install karnara hai fir wo available ho jayega
+    for running - npm run dev
+
+to run application - npm run start, npm start
+to create build  folder - npm run build
+
+for taillwind css - 
+1. npm install tailwindcss @tailwindcss/vite
+
+2. Add the @tailwindcss/vite plugin to your Vite configuration.
+vite.config.ts
+
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+3.CSS
+@import "tailwindcss";
+
+for defaukt value in taillwind - 
+{btnText || "visit me"}
+function Card({ userName, btnText="visit me" }) 
+
+Q - how to update a last value in setCounter
+Ans - setCounter((prevCounter)=>{}) // it gives a callback function beacuse it is a function itself
